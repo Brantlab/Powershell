@@ -1,0 +1,1 @@
+﻿get-aduser -Filter * -Properties * | select SamAccountName, GivenName, sn, DisplayName, telephonenumber, EmailAddress, StreetAddress , City, State, PostalCode, HomePhone, Mobile, MobilePhone, Title, Company | Export-CSV -Encoding UTF8 phones.csv
